@@ -1,0 +1,65 @@
+1. Ans: Collection Framework is a combination of classes and interface, which is used to store and manipulate the
+data in the form of objects. It provides various classes such as ArrayList, Vector, Stack, and HashSet, etc. and
+interfaces such as List, Queue, Set, etc. for this purpose.
+
+2. Arraylist:
+  * ArrayList internally uses a dynamic array to store the elements.
+  * Manipulation with ArrayList is slow because it internally uses an array. If any element is removed from the array, all the other elements are shifted in memory.
+  *  An ArrayList class can act as a list only because it implements List only.
+  *  ArrayList is better for storing and accessing data.
+
+  LinkedList:
+  * LinkedList internally uses a doubly linked list to store the elements.
+  * Manipulation with LinkedList is faster than ArrayList because it uses a doubly linked list, so no bit shifting is required in memory.
+  * LinkedList class can act as a list and queue both because it implements List and Deque interfaces.
+  * LinkedList is better for manipulating data.
+
+3. iterator:
+  * Iterator can be used to traverse any collection irrespective of the type of collection.
+  * As mentioned Iterator must be used to enumerate elements in all Collections implemented interfaces like Set, List, Queue, Deque and also in all implemented classes of Map interface. Iterator object can be created by calling iterator() method of Collection interface.
+  * Data traverse in case of the iterator is possible only in one direction as Iterator can traverse in the forward direction only
+
+ listiterator:
+ * List iterator can only be used to iterate only List collection implemented classes like arraylist,linkedlist etc.
+ * On the other hand, ListIterator must be used when we want to enumerate elements of List.The object of ListIterator can be created by calling listIterator() method present in List interface.
+ * List iterator could traverses both in forward and backward directions which makes data traverse in both directions.
+
+4. itarator:
+  * Iterator can be used to traverse any collection irrespective of the type of collection.
+  * As mentioned Iterator must be used to enumerate elements in all Collections implemented interfaces like Set, List, Queue, Deque and also in all implemented classes of Map interface. Iterator object can be created by calling iterator() method of Collection interface.
+  * Data traverse in case of the iterator is possible only in one direction as Iterator can traverse in the forward direction only
+
+ enumeration:
+ * Using Enumeration, we can only read element during traversing element in the collections.
+ * It can be used only with legacy class of the collection framework such as a Vector and HashTable.
+ * Enumeration  is Fail safe in nature. It doesn’t throw concurrent modification exception 
+
+5. list:
+ * The List is an indexed sequence.
+ * List allows duplicate elements
+ *  Elements by their position can be accessed.
+
+ set:
+ * The Set is an non-indexed sequence.
+ * Set doesn't allow duplicate elements.
+ *  Position access to elements is not allowed.
+
+6. hashset:
+ * Hash set is implemented using HashTable 
+ * HashSet allows a null object 
+ * Hash set use equals method to compare two objects 
+
+ treeset:
+ * The tree set is implemented using a tree structure. 
+ * The tree set does not allow the null object. It throws the null pointer exception. 
+ * Tree set use compare method for comparing two objects. 
+
+7. array:
+ * Array is static in size.
+ * An array is a fixed-length data structure.
+ * It is mandatory to provide the size of an array while initializing it directly or indirectly.
+
+ arraylist:
+ * ArrayList is dynamic in size.
+ * ArrayList is a variable-length data structure. It can be resized itself when needed.
+ * We can create an instance of ArrayList without specifying its size. Java creates ArrayList of default size.
